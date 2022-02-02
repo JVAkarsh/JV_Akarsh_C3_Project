@@ -69,6 +69,6 @@ class RestaurantTest {
     public void when_order_exists_total_should_be_calculated(){
         example_restaurant_for_testing();
         sampleMenu = restaurant.getMenu();
-        assertNotEquals(0,restaurant.getOrderPriceTotal(sampleMenu));
+        assertEquals(388,restaurant.getOrderPriceTotal(sampleMenu));
     }
 }
