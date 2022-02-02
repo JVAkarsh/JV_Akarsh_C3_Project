@@ -1,6 +1,7 @@
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Restaurant {
@@ -28,6 +29,14 @@ public class Restaurant {
     }
 
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
+
+    public void setClosingTime(LocalTime closingTime) {
+        this.closingTime = closingTime;
+    }
+
+    public void setOpeningTime(LocalTime openingTime) {
+        this.openingTime = openingTime;
+    }
 
     public List<Item> getMenu() {
         return menu;
@@ -67,4 +76,7 @@ public class Restaurant {
         return name;
     }
 
+    public int getOrderPriceTotal(List<Item> menu){
+        return 0;
+        }
 }
